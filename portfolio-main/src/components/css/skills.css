@@ -1,0 +1,110 @@
+/* Skills and Experience Section */
+.skills-experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px 0; /* Similar padding to the About section */
+  background-color: #000; /* Black background */
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.skills-frame, .experience-frame {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #f39c12; /* Gold border like in the About section */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(243, 156, 18, 0.8); /* Soft golden glow */
+  background-color: #000; /* Black background for the content */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills-frame:hover, .experience-frame:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 8px 20px rgba(243, 156, 18, 1); /* Enhanced shadow on hover */
+}
+
+/* Section Titles */
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f39c12, #f1c40f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Gradient text */
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3); /* Glow effect on text */
+  margin-bottom: 30px;
+}
+
+/* Skill and Experience Items */
+.skill-item, .experience-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background for contrast */
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 45%;
+  box-shadow: 0 3px 8px rgba(255, 165, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover, .experience-item:hover {
+  transform: scale(1.05);
+  background-color: #3e3e3e; /* Slight darkening on hover */
+}
+
+/* Section Item Headers */
+.skill-item h3, .experience-item h3 {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 22px;
+  color: #f39c12; /* Golden title */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(243, 156, 18, 0.8); /* Slight shadow */
+}
+
+/* Section Item Content */
+.skill-item p, .experience-item p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #ecf0f1; /* Light gray text */
+  font-weight: bold; /* Bold text for emphasis */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  padding: 15px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1); /* Subtle text shadow */
+}
+
+/* Animation */
+.skills-experience-container {
+  animation: fadeInUp 1.5s ease-in-out both;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-experience-container {
+    padding: 40px 20px; /* Adjust padding for mobile */
+  }
+
+  h2 {
+    font-size: 2.2rem; /* Smaller font for mobile */
+  }
+
+  .skill-item p, .experience-item p {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+    padding: 10px;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

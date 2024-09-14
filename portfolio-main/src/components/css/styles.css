@@ -1,0 +1,88 @@
+/* General Styles for Education Section */
+.education-section {
+  background-color: #000; /* Black background */
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.education-title {
+  font-size: 2.5rem; /* Base font size */
+  color: yellow; /* Yellow title color */
+  margin-bottom: 30px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.education-item {
+  background-color: #222; /* Dark background for items */
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  padding: 15px;
+}
+
+.education-item:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+.education-header h3 {
+  margin: 0;
+  color: orange; /* Orange heading */
+}
+
+.details {
+  background-color: #100f0f; /* Black background for details */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold text */
+  padding: 10px;
+  text-align: center;
+  display: none; /* Hide by default */
+}
+
+/* Display details only when item is expanded */
+.education-item.expanded .education-details {
+  display: block;
+}
+
+/* Responsive adjustments for devices with a width of 768px or less */
+@media (max-width: 768px) {
+  .education-title {
+      font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .education-grid {
+      padding: 0 10px;
+  }
+
+  .education-item {
+      padding: 10px;
+  }
+
+  .details {
+      padding: 8px;
+      font-size: 0.9rem; /* Smaller text size */
+  }
+}
+
+/* Further responsive adjustments for very small screens */
+@media (max-width: 480px) {
+  .education-title {
+      font-size: 1.75rem; /* Smaller font size for very small screens */
+  }
+
+  .education-item {
+      padding: 8px;
+  }
+
+  .education-details {
+      padding: 6px;
+      font-size: 0.8rem; /* Smaller text size */
+  }
+}

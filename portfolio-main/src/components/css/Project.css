@@ -1,0 +1,107 @@
+.projects-section {
+    background-color: #000; /* Black background */
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: orange; /* Orange title color */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in the grid */
+    gap: 30px;
+    padding: 0 50px;
+    justify-items: center; /* Center items in each column */
+}
+
+.project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px; /* Limits the width of each card */
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 255, 153, 0.5); /* Adds a glow effect */
+}
+
+.project-image {
+    width: 100%; /* Image takes full width of the card */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border-radius: 8px; /* Slight rounding for a modern look */
+    margin-bottom: 20px;
+    border: 2px solid #00ff99; /* Border for image */
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: yellow; /* Yellow heading */
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #00d9ff; /* Bright link color */
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #00ff99; /* Hover effect on the project links */
+}
+
+/* Center the "Smart City App" and "Student Management System" projects together */
+.project-card:nth-child(5),
+.project-card:nth-child(6) {
+    grid-column: span 2; /* Each card spans 2 columns */
+}
+
+.projects-grid {
+    /* Center the group of the 5th and 6th cards together */
+    grid-template-areas:
+        "card1 card2 card3 card4"
+        "card5 card5 card6 card6";
+}
+
+.project-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.project-card:nth-child(6) {
+    grid-area: card6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"; /* Stack cards on smaller screens */
+        padding: 0; /* Adjust padding for smaller screens */
+    }
+
+    .project-card:nth-child(5),
+    .project-card:nth-child(6) {
+        grid-column: span 1; /* Each card spans 1 column on smaller screens */
+        margin: 0 auto; /* Center the cards */
+    }
+}

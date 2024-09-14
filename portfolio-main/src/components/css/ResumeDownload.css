@@ -1,0 +1,84 @@
+/* Container styling for the top buttons */
+.resume-hire-container {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  align-items: center;
+  gap: 20px; /* Adjust space between the buttons */
+  margin-top: 40px; /* Space from the top */
+  flex-direction: row; /* Default layout */
+}
+
+/* Resume and Hire Me button styles */
+.resume-button, .hire-me-button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Blue to Green gradient */
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+/* Hover effect for buttons */
+.resume-button:hover, .hire-me-button:hover {
+  background: linear-gradient(90deg, #00ff87, #0093e9); /* Green to Blue gradient on hover */
+}
+
+/* Social Media Icons styling for bottom */
+.social-icons-container {
+  display: flex;
+  justify-content: center; /* Center the icons at the bottom */
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Zoom effect on hover for icons */
+.social-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .resume-hire-container {
+    flex-direction: column;
+    gap: 15px; /* Adjust gap for mobile */
+  }
+
+  .resume-button, .hire-me-button {
+    width: 80%; /* Full width on mobile */
+    text-align: center;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .social-icons-container {
+    flex-direction: column;
+    gap: 15px; /* Adjust gap for mobile */
+  }
+
+  .social-icon {
+    width: 35px; /* Smaller icon size for mobile */
+    height: 35px;
+  }
+}
+
+/* Additional styles to ensure button responsiveness on very small screens */
+@media (max-width: 480px) {
+  .resume-button, .hire-me-button {
+    width: 90%; /* Almost full width on very small screens */
+    font-size: 1rem; /* Adjust font size for readability */
+  }
+}
