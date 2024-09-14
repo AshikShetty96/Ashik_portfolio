@@ -16,10 +16,16 @@ function App() {
       <Navbar />
       <header className="App-header" id="home">
         <div className="intro">
-          <img src={`${process.env.PUBLIC_URL}/Ashik.jpg`} alt="Ashik Shetty" className="profile-pic" />
+          <img
+            src={`${process.env.PUBLIC_URL}/Ashik.jpg`} // Ensure this path is correct or update if in src
+            alt="Ashik Shetty"
+            className="profile-pic"
+          />
           <p className="greeting">Hi, I'm</p>
           <h1>Ashik Shetty</h1>
-          <p className="subtitle">Web Developer | Specializing in Full Stack Development| React.js Enthusiast</p>
+          <p className="subtitle">
+            Web Developer | Specializing in Full Stack Development | React.js Enthusiast
+          </p>
         </div>
         <ResumeDownload />
       </header>
