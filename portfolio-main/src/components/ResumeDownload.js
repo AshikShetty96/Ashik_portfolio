@@ -10,7 +10,9 @@ function ResumeDownload() {
     <div>
       {/* Resume Download and Hire Me Buttons together */}
       <div className="resume-hire-container">
-        <a href="/Resume1.pdf" download className="resume-button">Resume</a>
+        <a href={`${process.env.PUBLIC_URL}/Resume1.pdf`} download="Ashik_Shetty_Resume.pdf" className="resume-button">
+          Resume
+        </a>
         <a href="mailto:shettyashik28@gmail.com" className="hire-me-button">Hire Me</a>
       </div>
 
