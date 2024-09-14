@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ashik_portfolio/static/css/main.9ec73c31.css",
-    "main.js": "/Ashik_portfolio/static/js/main.7dbd54a2.js",
+    "main.js": "/Ashik_portfolio/static/js/main.9d495ffc.js",
     "static/media/Screenshot 2024-09-12 130753.png": "/Ashik_portfolio/static/media/Screenshot 2024-09-12 130753.728aa1020df23fb5bb30.png",
     "static/media/Screenshot 2024-09-12 131853.png": "/Ashik_portfolio/static/media/Screenshot 2024-09-12 131853.7da12e851ebc18035e94.png",
     "static/media/smart-city-1-1024x683.jpg": "/Ashik_portfolio/static/media/smart-city-1-1024x683.fa54359f61b8766f4721.jpg",
@@ -10,10 +10,10 @@
     "static/media/online-resume-website-builders-in-post.png": "/Ashik_portfolio/static/media/online-resume-website-builders-in-post.18e2da3d51a8458c13d2.png",
     "index.html": "/Ashik_portfolio/index.html",
     "main.9ec73c31.css.map": "/Ashik_portfolio/static/css/main.9ec73c31.css.map",
-    "main.7dbd54a2.js.map": "/Ashik_portfolio/static/js/main.7dbd54a2.js.map"
+    "main.9d495ffc.js.map": "/Ashik_portfolio/static/js/main.9d495ffc.js.map"
   },
   "entrypoints": [
     "static/css/main.9ec73c31.css",
-    "static/js/main.7dbd54a2.js"
+    "static/js/main.9d495ffc.js"
   ]
 }
